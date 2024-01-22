@@ -25,7 +25,6 @@ const Badge: React.FC<BadgeProps> = ({ color, withDot = false, children }) => {
     green:
       "text-green-700 bg-green-50 ring-green-600/20 dark:text-green-400 dark:bg-green-500/10 dark:ring-green-500/20",
     blue: "text-blue-700 bg-blue-50 ring-blue-700/10 dark:text-blue-400 dark:bg-blue-400/10 dark:ring-blue-400/30",
-    blue: "text-blue-700 bg-blue-50 ring-blue-700/10 dark:text-blue-400 dark:bg-blue-400/10 dark:ring-blue-400/30",
     purple:
       "text-purple-700 bg-purple-50 ring-purple-700/10 dark:text-purple-400 dark:bg-purple-400/10 dark:ring-purple-400/30",
     pink: "text-pink-700 bg-pink-50 ring-pink-700/10 dark:text-pink-400 dark:bg-pink-400/10 dark:ring-pink-400/20",

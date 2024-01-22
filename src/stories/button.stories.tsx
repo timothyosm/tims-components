@@ -1,5 +1,6 @@
 import { Meta, Story } from "@storybook/react";
 import Button, { ButtonProps } from "./button";
+import { PencilIcon } from "@heroicons/react/20/solid";
 
 export default {
   title: "Elements/Button",
@@ -41,6 +42,26 @@ export const Soft = Template.bind({});
 Soft.args = {
   type: "soft",
   children: "Soft Button",
+};
+
+export const Red = Template.bind({});
+Red.args = {
+  type: "red",
+  children: "Red Button",
+};
+
+export const WithLeadingIcon = Template.bind({});
+WithLeadingIcon.args = {
+  type: "primary",
+  leadingIcon: () => <PencilIcon className="w-5 h-5" />,
+  children: "leading icon",
+};
+
+export const WithTrailingIcon = Template.bind({});
+WithTrailingIcon.args = {
+  type: "primary",
+  trailingIcon: () => <PencilIcon className="w-5 h-5" />,
+  children: "trailing icon",
 };
 
 export const Rounded = Template.bind({});

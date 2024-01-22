@@ -52,11 +52,13 @@ export const WithDividers = Template.bind({});
 WithDividers.args = {
   items: [
     { label: "Edit", onClick: () => console.log("Edit") },
-    { label: "Duplicate", onClick: () => console.log("Duplicate") },
-    { divider: true },
+    {
+      label: "Duplicate",
+      onClick: () => console.log("Duplicate"),
+      divider: true,
+    },
     { label: "Archive", onClick: () => console.log("Archive") },
-    { label: "Move", onClick: () => console.log("Move") },
-    { divider: true },
+    { label: "Move", onClick: () => console.log("Move"), divider: true },
     { label: "Delete", onClick: () => console.log("Delete") },
   ],
   renderItem: (item, active) => (
